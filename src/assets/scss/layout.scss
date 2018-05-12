@@ -1,0 +1,14 @@
+
+
+.c-panel {
+  background-color: $c-panel;
+  border-right: 4px solid #4D516E;
+
+  &--left {
+    border-right: none;
+    border-left-width: 4px;
+    border-left-color: #4D516E;
+  }
+
+
+}
