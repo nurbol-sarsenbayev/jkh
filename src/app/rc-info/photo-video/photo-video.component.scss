@@ -1,0 +1,13 @@
+@import '../../../assets/scss/variables.scss';
+.c-photo-video {
+  display: flex;
+  background: $c-bg;
+  color: #fff;
+  min-height: 100%;
+}
+
+.c-top-calendar {
+  width: 100%;
+  height: 20%;
+  background: #ccc;
+}
