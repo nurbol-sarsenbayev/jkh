@@ -15,6 +15,7 @@ import { CameraTechnicsComponent } from './rc-info/camera-technics/camera-techni
 import { CircumventionComponent } from './rc-info/circumvention/circumvention.component';
 import { ConstructionProgressComponent } from './construction-progress/construction-progress.component';
 import { ConstructionStageComponent } from './construction-stage/construction-stage.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ConstructionStageComponent } from './construction-stage/construction-st
     CameraTechnicsComponent,
     CircumventionComponent,
     ConstructionProgressComponent,
-    ConstructionStageComponent
+    ConstructionStageComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
