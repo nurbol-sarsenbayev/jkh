@@ -1,0 +1,22 @@
+// This is main scss file, here should be only imports
+/*
+  Prefixes for CLASSES and VARIABLES
+    Objects: .o-
+    Components: .c-
+    State: .is- OR .has-
+    Theme: .t-
+    Utilities: .u-
+    Javascript hooks: .js-
+*/
+// Common variables
+@import 'variables';
+// Common mixins, functions
+@import 'mixins';
+// Reset css
+@import 'normalize';
+// Fonts
+@import 'typography';
+// Headers
+@import 'headings';
+// Objects, layouts
+@import 'layout';
