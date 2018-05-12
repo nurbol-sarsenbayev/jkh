@@ -3,15 +3,68 @@
   display: flex;
   background: $c-bg;
   color: #fff;
-  min-height: 100%;
+  height: 50%;
+  width: 50%;
 }
 
 .c-top-calendar {
   width: 100%;
   height: 20%;
-  background: #ccc;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 
   .top-calendar-header {
-    height: 50%;;
+    height: 50%;
+    border: 2px solid $c-text-gray2;
+    display: flex;
+    justify-content: space-between;
+    font-size: 150%;
+    line-height: 150%;
+    font-weight: 100;
+
+    .day {
+      background: $c-text-gray2;
+      flex-basis: 7%;
+      text-align: center;
+    }
+
+    .date {
+      display: flex;
+      text-align: left;
+      flex:1;
+      letter-spacing: 5%;
+      &-from-text, 
+      &-to-text {
+        margin-right: 1%;
+        margin-left: 1%;
+      }
+    }
+
+    .icon-calendar {
+      flex-basis: 5%;
+      background: $c-text-gray2;
+    }
+  }
+
+  .top-calendar-body {
+    display: flex;
+    .year{
+      display: flex;
+      width: 10%;
+    }
+    .months {
+      display: flex;
+      flex-direction: column;
+      &-half {
+        display: flex;
+        .month {
+          margin-right: 2px;
+          background: $c-text-gray2;
+          flex-basis: 16.666%;
+
+        }
+      }
+    }
   }
 }
