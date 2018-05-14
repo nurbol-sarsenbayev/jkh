@@ -1,145 +1,50 @@
 <div class="main-block">
-  <div class="block">
-    <div class="top">
-      <div class="photo"></div>
-      <div class="text">
-        <p class="title">г.Шымкент (МИО ЮКО)</p>
-        <p class="description">
-          Строительство 9-ти этажного 
-          жилого дома по ул. Верхняя
-          магитраль
-        </p>
-      </div>
+  <div class="block" *ngFor="let item of items">
+    <div class="left indicator">
+
     </div>
 
-    <div class="bottom">
-      <div class="row">
-        <div class="item">
-          <p class="main">8 258</p>
-          <p class="sub ">Тыс.кв.метров</p>
-        </div>
-        <div class="item">
-          <p class="main">275</p>
-          <p class="sub ">Кол-во квартир</p>
-        </div>
-        <div class="last item">
-          <p class="main yellow">+12 МЕС 20Д</p>
-          <p class="sub ">Задержка</p>
+    <div class="right">
+      <div class="top">
+        <div class="photo"></div>
+        <div class="text">
+          <p class="title">{{item.title}}</p>
+          <p class="description gray">{{item.description}}</p>
         </div>
       </div>
-      <div class="row">
-        <div class="item">
-          <p class="main">11</p>
-          <p class="sub ">Пятен</p>
-        </div>
-        <div class="item">
-          <p class="main">3 325 000</p>
-          <p class="sub">Сумма инвист.тыс.тг.</p>
-        </div>
-        <div class="last item">
-          <p class="main">81%</p>
-          <p class="sub">Исполнение</p>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- second block -->
-  <div class="block">
-    <div class="top">
-      <div class="photo"></div>
-      <div class="text">
-        <p class="title">г.Шымкент (МИО ЮКО)</p>
-        <p class="description">
-          Строительство 9-ти этажного 
-          жилого дома по ул. Верхняя
-          магитраль
-        </p>
-      </div>
-    </div>
-
-    <div class="bottom">
-      <div class="row">
-        <div class="item">
-          <p class="main">8 258</p>
-          <p class="sub ">Тыс.кв.метров</p>
+      <div class="bottom">
+        <div class="row">
+          <div class="item">
+            <p class="main">{{item.squareMeterAmount}}</p>
+            <p class="sub gray">Тыс.кв.метров</p>
+          </div>
+          <div class="item">
+            <p class="main">{{item.flatAmount}}</p>
+            <p class="sub gray">Кол-во квартир</p>
+          </div>
+          <div class="last item">
+            <p class="main yellow">{{item.delayAmount}}</p>
+            <p class="sub ">Задержка</p>
+          </div>
         </div>
-        <div class="item">
-          <p class="main">275</p>
-          <p class="sub ">Кол-во квартир</p>
-        </div>
-        <div class="last item">
-          <p class="main yellow">+12 МЕС 20Д</p>
-          <p class="sub ">Задержка</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="item">
-          <p class="main">11</p>
-          <p class="sub ">Пятен</p>
-        </div>
-        <div class="item">
-          <p class="main">3 325 000</p>
-          <p class="sub">Сумма инвист.тыс.тг.</p>
-        </div>
-        <div class="last item">
-          <p class="main">81%</p>
-          <p class="sub">Исполнение</p>
+        <div class="row">
+          <div class="item">
+            <p class="main">{{item.pointAmount}}</p>
+            <p class="sub gray">Пятен</p>
+          </div>
+          <div class="item">
+            <p class="main">{{item.investmentAmount}}</p>
+            <p class="sub gray">Сумма инвист.тыс.тг.</p>
+          </div>
+          <div class="last item">
+            <p class="main">{{item.doneForPercent}}%</p>
+            <p class="sub">Исполнение</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
-
-
-  <!-- third block -->
-  <div class="block">
-    <div class="top">
-      <div class="photo"></div>
-      <div class="text">
-        <p class="title">г.Шымкент (МИО ЮКО)</p>
-        <p class="description">
-          Строительство 9-ти этажного 
-          жилого дома по ул. Верхняя
-          магитраль
-        </p>
-      </div>
-    </div>
-
-    <div class="bottom">
-      <div class="row">
-        <div class="item">
-          <p class="main">8 258</p>
-          <p class="sub ">Тыс.кв.метров</p>
-        </div>
-        <div class="item">
-          <p class="main">275</p>
-          <p class="sub ">Кол-во квартир</p>
-        </div>
-        <div class="last item">
-          <p class="main yellow">+12 МЕС 20Д</p>
-          <p class="sub ">Задержка</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="item">
-          <p class="main">11</p>
-          <p class="sub ">Пятен</p>
-        </div>
-        <div class="item">
-          <p class="main">3 325 000</p>
-          <p class="sub">Сумма инвист.тыс.тг.</p>
-        </div>
-        <div class="last item">
-          <p class="main">81%</p>
-          <p class="sub">Исполнение</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <!-- fourth block -->
+  
   
 </div>
